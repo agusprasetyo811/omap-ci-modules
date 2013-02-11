@@ -19,6 +19,30 @@
 		</copy>
 	</target>
 	
+	<target name="remote.create">
+		<copy todir="${ci.local.dir}${app.controllers.dir}" overwrite="true" flatten="true">
+			<fileset dir="${app.controllers.dir}" />
+		</copy>
+		<copy todir="${ci.local.dir}${app.models.dir}" overwrite="true" flatten="true">
+			<fileset dir="${app.models.dir}"/>
+		</copy>
+		<copy todir="${ci.local.dir}${app.modules.dir}" overwrite="true" flatten="true">
+			<fileset dir="${app.modules.dir}"/>
+		</copy>
+	</target>
+	
+	<target name="remote.delete">
+		<copy todir="${ci.local.dir}${app.controllers.dir}" overwrite="true" flatten="true">
+			<fileset dir="${app.controllers.dir}" />
+		</copy>
+		<copy todir="${ci.local.dir}${app.models.dir}" overwrite="true" flatten="true">
+			<fileset dir="${app.models.dir}"/>
+		</copy>
+		<copy todir="${ci.local.dir}${app.modules.dir}" overwrite="true" flatten="true">
+			<fileset dir="${app.modules.dir}"/>
+		</copy>
+	</target>
+	
 	<target name="remote.symlink">
 		<copy todir="${ci.local.dir}/application/${app.controllers.dir}" overwrite="true" flatten="true">
 			<fileset dir="${app.controllers.dir}" />
