@@ -1,1 +1,6 @@
-ci.local.dir=c:/git-project/portal-undangan/
+ci.local.dir=c:/git-project/k-shop/
+ci.modules.name=mod_feed
+
+ci.ctr.filename=mod_feed
+ci.models.filename=
+ci.modules.filename=mod_feed
